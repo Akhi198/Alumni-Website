@@ -1,0 +1,21 @@
+.panel{
+    height: 30px;
+    background-color: #3B6064;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    color: white;
+}
+.panel a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+}
+.panel a:hover{
+    scale: 1.2;
+    color: white;
+    text-decoration: underline;   
+}
+

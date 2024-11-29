@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: blueviolet;
+    /* background-image: url("wp8979195-the-new-mutants-4k-wallpapers.jpg");
+    background-size: cover; */
+}
+.login{
+   width: 420px;
+   background:transparent;
+   border: 2px solid #7D938A;
+   backdrop-filter:blur(20px);
+   box-shadow: 0 0 10px rgb(0, 0,0,.2);
+   color: white;
+   border-radius: 10px;
+   padding: 30px 40px;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+    /* background-color: chocolate; */
+}
+.input-box input{
+    width: 81%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #7D938A;
+    border-radius: 40px;
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 60px;
+    
+}
+.input-box input::placeholder{
+    color: white;
+    /* padding: 20px; */
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    bottom: 40%;
+    transform: translateY(50%);
+    font-size: 20px;
+
+}
+.rem{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -20px 2px 20px;
+}
+.rem label input{
+    accent-color: white;
+    margin: 3px;
+}
+.rem a{
+    color: white;
+    text-decoration: none;
+}
+.rem a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border: 2px solid #7D938A;
+    border-radius: 40px;
+}
+.sign{
+    text-align: center;
+    font-size: 14.5px;
+    margin: 20px 0 15px;
+}
+.sign a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(244, 244, 246);
+}
+.sign a:hover{
+    text-decoration: underline;
+}

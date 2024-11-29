@@ -1,0 +1,275 @@
+*{
+    margin: 0px;
+    padding:0px; 
+    font-family: sans-serif;   
+}
+body{
+    background-color: #818479;
+}
+.navbar{
+    background-color:#3E92CC ;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.name{
+    font-size: 30px;
+    margin-left: 30px;
+}
+a:hover{
+    color:black;
+}
+.log{
+    margin-left: 900px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.log i{
+    font-size: 25px;
+}
+.search{
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.search-icon i{
+    font-size: 25px;
+}
+.menu{
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.menu-icon i{
+    font-size: 25px;
+}
+/* header ends */
+.stories{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: grey;
+}
+input{
+    display: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.book{
+    display: flex;
+}
+#cover{
+    width: 300px;
+    height: 500px;
+}
+.flip-book{
+    width: 300px;
+    height: 500px;
+    position: relative;
+    perspective: 1500px;
+}
+.flip{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transform: rotateY(0 deg);
+    transition: .5s;
+    color: #000;
+}
+.front h2{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.front p{
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+}
+.front a{
+    color: rgb(36, 74, 196);
+}
+
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #90b8de;
+    box-sizing: border-box;
+    padding: 0 13px;
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5) 0 2px 5px rgba(0,0,0,0.5);
+}
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-color: #000;
+
+}
+.next-btn{
+    position: absolute;
+    bottom: 13px;
+    right: 13px;
+    cursor: pointer;
+    color: #fff;
+}
+.back-btn{
+    position: absolute;
+    bottom: 13px;
+    right: 13px;
+    cursor: pointer;
+    color: #fff;
+}
+#p1{
+    z-index: 3;
+}
+#p2{
+    z-index: 2;
+}
+#p3{
+    z-index: 1;
+}
+#c1:checked ~ .flip-book #p1{
+    transform: rotateY(-180deg);
+    z-index: 1;
+}
+#c2:checked ~ .flip-book #p2{
+    transform: rotateY(-180deg);
+    z-index: 2;
+}
+#c3:checked ~ .flip-book #p3{
+    transform: rotateY(-180deg);
+    z-index: 3;
+}
+/* footer starts */
+footer{
+    position: relative;
+}
+.top{height: 50px;
+    background-color: #5B85AA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border: 2px solid #465362;
+    border-radius: 20px;
+}
+.top a{
+    font-size: 27px;
+}
+.contact{
+    height: 150px;
+    background-color: #0B3954;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cont1{
+    display: flex;
+    align-items: center;
+}
+.cont1 i{
+    color: white;
+    font-size: 35px;
+}
+.det{
+    margin-left: 10px;
+}
+p{
+    font-size: 30px;
+    font-weight: 600 ;
+    color: white;
+    margin: 0 0 20px 10px;
+}
+.fnl{
+    height: 400px;
+    background-color: #465362;
+}
+.final{
+    height: 320px;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    padding-top: 0px;
+}
+.arr{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+.arr a{
+    color:#B9C6AE ;
+    margin: 0 0 10px 20px;
+}
+.arr a:hover{
+    color: black;
+}
+
+.scl{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    color: white;
+}
+.scl i:hover{
+    color: black;
+}
+.secl{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px 0 0;
+}
+.cprt p{
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    opacity: 0.8;
+}
+.crtby{
+    opacity: 0.7;
+    font-weight: 600;
+}
+.crtby a{
+    color: black;
+}
+.crtby a:hover{
+    font-size: 20px;
+} 
+
